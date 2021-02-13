@@ -1,0 +1,15 @@
+<main>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class='form-container'>
+            <mat-form-field class="example-full-width">
+                <mat-label>Nome</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Sobrenome</mat-label>
+                <input matInput formControlName="surname">
+            </mat-form-field>
+        </div>
+        <button type="submit" mat-raised-button color="warn">Registar</button>
+    </form>
+</main>
